@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "esnext",
+    "jsx": "react",
+    "declaration": true,
+    "declarationDir": "./dist/types",
+    "sourceMap": true,
+    "outDir": "dist",
+    "strict": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "emitDeclarationOnly": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "@storybook-helpers": [".storybook/utils"]
+    }
+  },
+  "include": ["src/**/*"]
+}

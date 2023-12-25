@@ -1,0 +1,54 @@
+{
+  "name": "rollup-ts-react-lib",
+  "version": "0.0.0",
+  "description": "",
+  "module": "index.js",
+  "files": [
+    "libs"
+  ],
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist",
+    "build": "npm run clean && rollup --config rollup.config.mjs",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.23.6",
+    "@babel/preset-env": "^7.23.6",
+    "@babel/preset-react": "^7.23.3",
+    "@babel/preset-typescript": "^7.23.3",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@storybook/addon-actions": "^7.2.1",
+    "@storybook/addon-essentials": "^7.2.1",
+    "@storybook/addon-interactions": "^7.2.1",
+    "@storybook/addon-links": "^7.2.1",
+    "@storybook/react": "^7.2.1",
+    "@storybook/react-webpack5": "^7.2.1",
+    "@types/react": "^18.2.45",
+    "core-js": "^3.34.0",
+    "rimraf": "^5.0.5",
+    "rollup": "^4.9.1",
+    "rollup-plugin-analyzer": "^4.0.0",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-generate-package-json": "^3.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "storybook": "^7.2.1",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3",
+    "yargs": "^17.7.2"
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.15.0",
+    "react": "^18.2.0"
+  }
+}
